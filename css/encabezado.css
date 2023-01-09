@@ -1,0 +1,109 @@
+.header {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.header__mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.menu__icon--button {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: inline-block;
+    background-image: url('./../assets/icons/twotone_menu_black_24dp.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.menu__icon--button:hover {
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mobile__title {
+    font-size: 2.2rem;
+    color: darkblue;
+}
+
+/* menu mobile */
+
+.mobile__menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: lightslategray;
+    transform: translateX(-100%);
+
+    padding: 1rem;
+}
+
+.mobile__menu.show__menu {
+    transform: translateX(0);
+}
+
+
+.mobile__menu .list__item a{
+    display: block;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: white;
+}
+
+.mobile__menu .list__item a:hover {
+    font-weight: 600;
+    color: darkblue;
+}
+
+
+.menu__icon--close {
+    width: 3.2rem;
+    height: 3.2rem;
+    display: inline-block;
+    background-image: url('./../assets/icons/twotone_close_black_24dp.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.menu__icon--close:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+.menu__nav {
+    position: relative;
+}
+
+.menu__icon--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+
+
+
+
+
+.header__desktop {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .header__mobile {
+        display: none;
+    }
+    .header__desktop {
+        display: block;
+    }
+}
