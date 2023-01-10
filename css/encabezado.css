@@ -1,13 +1,16 @@
 .header {
     width: 100%;
-    background-color: lightgray;
+    background-color: white;
+    box-shadow: 1px 5px 10px #eee;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .header__mobile {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem;
+    gap: 1rem;
 }
 
 .menu__icon--button {
@@ -27,7 +30,7 @@
 
 .mobile__title {
     font-size: 2.2rem;
-    color: darkblue;
+    /* color: darkblue; */
 }
 
 /* menu mobile */
@@ -87,12 +90,39 @@
     position: absolute;
     top: 0;
     right: 0;
-
 }
 
 
+/* header desktop */
 
+.header__desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.desktop__title {
+    font-size: 2.4rem;
+}
+
+.menu__nav--list {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__nav--list .list__item {
+    font-size: 1.6rem;
+}
+
+.menu__nav--list .item__link {
+    display: inline-block;
+    padding: 1rem 1.2rem;
+}
+.menu__nav--list .item__link:hover {
+    background-color: lightgray;
+    color: red;
+}
 
 
 .header__desktop {
@@ -104,6 +134,26 @@
         display: none;
     }
     .header__desktop {
-        display: block;
+        display: flex;
     }
 }
+
+
+@media screen and (min-width: 940px) {
+    .desktop__title {
+        font-size: 3.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
