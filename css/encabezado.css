@@ -4,6 +4,9 @@
     box-shadow: 1px 5px 10px #eee;
     padding: 1rem;
     box-sizing: border-box;
+    
+    position: sticky;
+    top: 0;
 }
 
 .header__mobile {
@@ -113,6 +116,7 @@
 
 .menu__nav--list .list__item {
     font-size: 1.6rem;
+    margin: 0;
 }
 
 .menu__nav--list .item__link {
