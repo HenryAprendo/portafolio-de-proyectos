@@ -56,6 +56,8 @@
 }
 .project__name.active {
     background-color: lightgreen;
+    color: white;
+    font-weight: 600;
 }
 
 .project__content {
@@ -68,8 +70,6 @@
 .project__content.show {
     display: none;
 }
-
-
 
 .text__title {
     font-size: 1.6rem;
