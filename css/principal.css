@@ -70,14 +70,15 @@
 }
 
 .text__title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .text__description {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
+    line-height: normal;
 }
 
 .list__title {
@@ -135,6 +136,7 @@
     .project__content {
         flex-direction: row;
         justify-content: space-between;
+        gap: 1rem;
     }
 }
 
