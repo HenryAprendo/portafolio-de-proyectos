@@ -61,12 +61,25 @@
 .project__content {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid #eee;
+
+    animation-name: animationContent;
+    animation-duration: 1s;
 }
 
 .project__content.show {
     display: none;
+}
+
+@keyframes animationContent {
+    from {
+        opacity: 0.5;
+    }
+    
+    to {
+        opacity: 1;
+    }
 }
 
 .text__title {
