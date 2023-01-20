@@ -33,7 +33,7 @@
 
 .mobile__title {
     font-size: 2.2rem;
-    /* color: darkblue; */
+    color: teal;
 }
 
 /* menu mobile */
@@ -107,6 +107,8 @@
 
 .desktop__title {
     font-size: 2.4rem;
+    font-weight: 600;
+    color: teal;
 }
 
 .menu__nav--list {
@@ -122,6 +124,7 @@
 .menu__nav--list .item__link {
     display: inline-block;
     padding: 1rem 1.2rem;
+    color: teal;
 }
 .menu__nav--list .item__link:hover {
     background-color: lightgray;
